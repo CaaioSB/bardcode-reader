@@ -104,6 +104,7 @@
             this.uiButton3.Text = "?";
             this.uiButton3.TextColor = System.Drawing.Color.White;
             this.uiButton3.UseVisualStyleBackColor = false;
+            this.uiButton3.Visible = false;
             // 
             // uiBtnAdicionar
             // 
