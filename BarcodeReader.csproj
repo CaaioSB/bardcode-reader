@@ -32,9 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>barcode-reader256.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp">
       <HintPath>packages\uiCSB\lib\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,26 +61,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formulario\frmCadProduto.cs">
+    <Compile Include="Common\App.cs" />
+    <Compile Include="Formulario\frmAppend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario\frmCadProduto.Designer.cs">
-      <DependentUpon>frmCadProduto.cs</DependentUpon>
+    <Compile Include="Formulario\frmAppend.Designer.cs">
+      <DependentUpon>frmAppend.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario\frmGetProduto.cs">
+    <Compile Include="Formulario\frmReader.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario\frmGetProduto.Designer.cs">
-      <DependentUpon>frmGetProduto.cs</DependentUpon>
+    <Compile Include="Formulario\frmReader.Designer.cs">
+      <DependentUpon>frmReader.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\Objeto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulario\frmCadProduto.resx">
-      <DependentUpon>frmCadProduto.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\frmAppend.resx">
+      <DependentUpon>frmAppend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario\frmGetProduto.resx">
-      <DependentUpon>frmGetProduto.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\frmReader.resx">
+      <DependentUpon>frmReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +108,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="barcode-reader256.ico" />
+    <Content Include="Resources\barcode-reader.ico" />
+    <Content Include="Resources\barcode-reader.png" />
+    <Content Include="Resources\barcode-reader256.ico" />
     <Content Include="Resources\peopleontable.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
