@@ -12,7 +12,7 @@
 - Deletar um objeto
 
 ## Tela Principal
-Este formulário é utilizado para realizar a leitura de códigos de barras, mas para isto, acredito que você já tenha cadastrado um objeto, se não, clique [aqui](#tela-cadastro)
+Este formulário é utilizado para realizar a leitura de códigos de barras, mas para isto, acredito que você já tenha cadastrado um objeto, se não, clique [aqui](#tela-de-cadastro)
 
 [![Tela Principal (frmReader)](https://github.com/CaaioSB/bardcode-reader/blob/master/tela-principal.png)]()
 
